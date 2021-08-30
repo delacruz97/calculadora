@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2? family = Kaisei + Decol & display = swap');
+
+body {
+    background-color: rgb(8, 197, 188);
+}
+
+
+/*estilos globales con --> "*"  <--   */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+
+html {
+    font-family: 'Kaisei Decol', serif;
+    font-size: 63%;
+}   
+
+/* hago referncial al "div" que esta en mi archivo " index.html*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+
+
+}
+/*llamo a las clases ".calculator", .calculator- ,.calculator*/
+.calculator {
+    background-color: rgb(255, 176, 176);
+
+
+
+
+    display: flex;
+    flex-direction: column; /*ordena todoen columnas*/
+    width: 500px; /*ancho*/
+    font-size: 3rem; /*letra*/
+    border: 5px solid rgb(255, 46, 46); /*borde*/
+
+}
+
+.calculator-display {
+    padding: 25px 15px ; /*25 arriba y abajo. 15 ala derecha e izquierda*/
+    width: 100%; /*ancho*/
+    text-align: right;
+    border: 5px solid rgb(255, 46, 46);
+    overflow-x: auto;
+}  
+
+.calculator-keypad {
+    display: flex;
+    width: 100%;
+}
+
+.keypad-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.keypad-button {
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid rgb(107, 98, 98);
+}
+
+/*para que me vaje el brillo al pasar el maus*/
+.keypad-button:hover {
+    filter: brightness(80%);
+    transition: filter .25s;
+ 
+}
+
+.keypad-button.yellow {
+    background-color: yellow;
+}
+
+.keypad-button.large {
+    width: 50%;
+}
+
+.keypad-button.dark {
+    background-color:lightgray;
+}
